@@ -1,0 +1,86 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "sebastian@codingthesmartway.com",
+      "password": "abc123"
+    },
+    {
+      "id": 2,
+      "email": "steve@codingthesmartway.com",
+      "password": "ert456"
+    },
+    {
+      "id": 3,
+      "email": "a@c.com",
+      "password": "1"
+    }
+  ],
+  "loan-applications": [
+    {
+      "id": 1,
+      "fullname": "sebastian Doe",
+      "email": "s.doe@gmail.com",
+      "phone": "34422443",
+      "orgname": "abc pte. ltd.",
+      "purpose": "Marketing of mobile app, Flyer distribution",
+      "totalLoanAmount": 3000,
+      "outstandingLoanAmount": 0,
+      "loanterm": 12,
+      "loanstatus": "approved",
+      "userId": 1
+    },
+    {
+      "fullname": "Ann vu",
+      "email": "ann@codingthesmartway.com",
+      "phone": "12212211",
+      "orgname": "weqqwdc",
+      "purpose": "23323",
+      "totalLoanAmount": "132332",
+      "outstandingLoanAmount": 132332,
+      "loanterm": "12",
+      "loanstatus": "approved",
+      "id": 2,
+      "userId": 3
+    },
+    {
+      "fullname": "A and C ",
+      "email": "a@c.com",
+      "phone": "23322233",
+      "orgname": "#we ewe ",
+      "purpose": "weqwe",
+      "totalLoanAmount": "34000",
+      "outstandingLoanAmount": "34000",
+      "loanterm": "",
+      "loanstatus": "pending",
+      "userId": 3,
+      "id": 3
+    },
+    {
+      "fullname": "Vipul Zambare",
+      "email": "v@z.com",
+      "phone": "37887653",
+      "orgname": "ABC pte. ltd",
+      "purpose": "Funding",
+      "totalLoanAmount": "34000",
+      "outstandingLoanAmount": "34000",
+      "loanterm": "",
+      "loanstatus": "pending",
+      "userId": 3,
+      "id": 8
+    },
+    {
+      "fullname": "Vipul Zambare",
+      "email": "vipulzambare1993@gmail.com",
+      "phone": "90746618",
+      "orgname": "1993",
+      "purpose": "Funding for startup",
+      "totalLoanAmount": "4000",
+      "outstandingLoanAmount": "4000",
+      "loanterm": "6",
+      "loanstatus": "approved",
+      "userId": 3,
+      "id": 9
+    }
+  ]
+}

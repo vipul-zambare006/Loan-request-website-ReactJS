@@ -1,25 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+import PrivateRoute from './components/common/privateRoute'
 
+import Login from './components/login'
+import LoanRequestForm from './components/loanRequestForm'
+import loanRequestList from './components/loanRequestList'
+import loanRequesterMain from './components/loanRequesterMain'
+import loanRepay from './components/loanRepay';
+import MaterialHeader from "./components/materialHeader";
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+      <MaterialHeader name={"Aspire-Cap Loan Application"}/>
+        <Router>
+          <div>
+            <Route path="/" exact component={Login}></Route>
+            <PrivateRoute path="/loanRequestForm/:userId" exact component={LoanRequestForm}></PrivateRoute>   
+            <PrivateRoute path="/loanRequestList" exact component={loanRequestList}></PrivateRoute>   
+            <PrivateRoute path="/loanRequesterMain/:userId" exact component={loanRequesterMain}></PrivateRoute>   
+            <PrivateRoute path="/loanRepay/:userId" exact component={loanRepay}></PrivateRoute>   
+          </div>
+        </Router>
       </div>
     );
   }
