@@ -1,4 +1,4 @@
-# Loan requst/approve application using ReactJS
+# Loan application using ReactJS
 
 ## Description:
 
